@@ -1,0 +1,28 @@
+{% extends 'base.html' %}
+{% block title %} {{ request.session.active_side_pane | capfirst }}{% endblock %}
+{% block content %}
+
+    <div class="wrapper">
+    {% include "side-bar.html" %}
+    
+    
+        <div class="main-panel">
+            {% include "top-nav-bar.html" %}
+            <div class="content">
+            <div class="container-fluid">
+                <div class="row">
+                    {% for room in properties %}
+                    <div class="col-lg-4 col-sm-6">
+                       {% include 'room-card.html' %}
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>            
+
+            </div>
+
+            {% include 'footer.html' %}
+        </div>
+
+    </div>
+{% endblock %}

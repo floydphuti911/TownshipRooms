@@ -1,0 +1,28 @@
+                        <div class="card card-user">
+                            <div class="image">
+                                <img src="{{ room.picture.url }}" alt="..."/>
+                            </div>
+                            <div class="content">
+                                <div class="author">
+                                  <img class="avatar border-white" src="{{ room.picture.url }}" alt="..."/>
+                                  <h4 class="title">
+                                     <a href="{% url 'room' room.slug %}">{{ room.street_address }} <strong>{{ room.suburb }}</strong></a>
+                                  </h4>
+                                </div>
+                                <p class="description text-center">
+                                    {{ room.description|safe|linebreaks|truncatewords_html:5  }}
+                                </p>
+                            </div>
+                            <hr>
+                            <div class="footer">
+                                <div class="row">
+                                    <div class="col-md-6 col-xs-5 ">
+                                        <a class="btn btn-simple btn-danger"> <i class="ti-mobile"></i> {{ room.manager.mobile }}</a>
+                                    </div>
+                                    <div class="col-md-6 col-xs-5">
+                                        <a class="btn btn-simple btn-secondary" href="{% url 'room' room.slug %}#map"> <i class="ti-car"></i> Directions</a>
+                                    </div>   
+                                    <div></div>                                 
+                                </div>
+                            </div>
+                        </div>

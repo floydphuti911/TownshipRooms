@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "township-rooms",
+  "private_key_id": "5914eca2659c9644e5aeb4d9a31290118248818f",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvwIBADANBgkqhkiG9w0BAQEFAASCBKkwggSlAgEAAoIBAQDQvjv1gR+my0Au\nM+VEUOlCPb11AoIcMi/fjpQOFMWYmNQlt7lXjW97AAJnM3Ma2piG5rPfUzN64doI\n8FdmKiBGUMj39fsviCKsjVLfCSQi14s9CEsOiQ63wRIf7YsCmWPC0IgshMFbnV2w\ntR0GlTE2XwvZhrfhfNRhDAwIJHHdk9BQP1CaXR32CjYiwIO59jRWid/a5nSzgL38\n7ojtuifcy+37oanDvK8QlqHMUDsJOXFWzO57s491IC06XDYmeeQnVTxvQvbYoB99\nLSwL14jqgX8ibQbssidi8mZ7Xb4DhB8AloMurtG/8qIKYHKFYwBZ56TzqyGM85aL\nrtGM1a0PAgMBAAECggEASEmwyu657tGROs7W9ScN+FYYL5a8RxZsNL+T7yJrYVJ/\nmUY8JaFBu3c/3cxX7rNHwePP46VU/ReMoa7VnXg2MBOW3SPupkG/PEE+syVfwb8i\nJXMjRvfYxHLUm4DwNGi5PwRnO/+HVHo1MVYvJJHy9nDI0j5QnIJVq/v3iLRSSFhh\nOaGpHDTIptoAxvLk9kLZ1Ybc6Pm0cbg5B+sybBarI9tfXzO8Y0mBFyqcu0jkBDAC\nkbDobQZET53ZOOaJ0iEYV3h6nUOo4BiLvm1ZsYixl6HPkU/XzHFW9mcOtVl3ToQx\nNRObkJQVDTgJAq1UstmdtsNr+zfCs+zVODxOgHw2YQKBgQDxH/YSLs3pc4mk05ZR\nAU1SiUFiUGqMvzdXSOvhaJ21xJ7Xzch62k7IA9kVhact6c5D0oSKzhOuLImedBaD\n2EsnSjErVUJMgbxeln3Q0Byo6DNNGoXIYh2MT1/lKGoUvxnysLi3zoJtUNgSo4Eg\nHTaMWCUlLnlMU2j9N2HNGB+UbwKBgQDdnt/PITuIjFSupgF+/781ko2F9o9QVoxt\nqrUnItRXwvOha950nWqJcsTv9k67EqNtV04RQflQQshqhi7tAOCruTYRf8+KWNve\n6rjaQwG3WO9nVQBkLE14kaPxQ/hlnfWN/1S3J5NUfJUEMiFDzC6ik6aYiJAsEj4G\nS/b9VFYBYQKBgQCDQJyXxTZ871FrkWlvasAGP4SB2bhGKQgc0SrlJidC/GZinjeU\n+CSOJ9oRJxGbonuO25ceX5LC6qd2w0ZGOoSePHqLVfui3bQF4PFXqxEOuGbEf713\nGEFxUPuoJ9mmtWeQfbXvB9BjZPBZJPty2bQJrSl7FdMdQwIRZAYuuATorQKBgQCX\nw2dCQWCyVl7bJoUZwerftddCaKClhE8v/lmFTl2ZJ8CMxwCUXQQK0dQ4+zPY+Z9+\nje3A9avUIZd7Ex5pYFN6ZR+4hgzKkaUnlxc1J/Ox6a4v1c6pyojWyu04l7IvbCcu\nsS4DKo/CqHmnYOjUs6sv2+qWw9XuyCM/Tp/5xNoMoQKBgQDJF4JNjG5xN+FmHWT1\naO30Vv+hZEQyPLK3mPToDReURVFriLxMV+2deM9RTqV1hJ+TdV0FXy2djkGCiUI/\neqFUlvwu1auXHe4rH7gCgKp8/NfaNCfiQn3c/xLTkkixvhPHrBU9tTQMPT4wLIW+\nASYv9CyJdyQ+9hnBC2SKNzxMNg==\n-----END PRIVATE KEY-----\n",
+  "client_email": "web-production@township-rooms.iam.gserviceaccount.com",
+  "client_id": "113737387379399866707",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://accounts.google.com/o/oauth2/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/web-production%40township-rooms.iam.gserviceaccount.com"
+}

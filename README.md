@@ -1,6 +1,7 @@
 # TownshipRooms
 Find and Compare rooms to rent
 
+[ ![Codeship Status for floydflava/TownshipRooms](https://app.codeship.com/projects/edafe3f0-f749-0135-594b-7af7195f2991/status?branch=master)](https://app.codeship.com/projects/275358)
 Installation
 ==
 

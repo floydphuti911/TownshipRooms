@@ -23,7 +23,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = 'tp0dypukbw7op_s9mxd^os!=mb427q5pm9##@*arm5-lwx9vcz'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = True if os.environ.get('DJANGO_DEBUG', None) == '1' else False
+
+DJANGO_ENV = os.environ.get('DJANGO_ENV')
 
 ALLOWED_HOSTS = ['*']
 
@@ -37,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'storages',
     'core_platform',
 ]
 
@@ -129,4 +132,40 @@ STATICFILES_DIRS = [
 
 MEDIA_ROOT = 'media'
 
+STATIC_ROOT = 'static'
+
+STATIC_URL = '/static/'
+
 MEDIA_URL = '/media/'
+
+if DJANGO_ENV == "PRODUCTION":
+
+    STATICFILES_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+
+    DEFAULT_FILE_STORAGE = 'storages.backends.gcloud.GoogleCloudStorage'
+
+    GS_BUCKET_NAME = 'township-rooms-web-prod'
+
+    GS_AUTO_CREATE_BUCKET = True
+
+    GS_AUTO_CREATE_ACL = 'public-read'
+
+    GS_PROJECT_ID = 'township-rooms'
+
+    GCS_ROOT = "https://storage.googleapis.com/{bucket_name}/".format(
+        bucket_name=os.environ.get("GS_BUCKET_NAME", GS_BUCKET_NAME)
+    )
+
+    MEDIA_PREFIX = "media"
+
+    STATIC_PREFIX = "static"
+
+    MEDIA_URL = "{gcs_root}{prefix}/".format(
+        gcs_root=GCS_ROOT,
+        prefix=MEDIA_PREFIX,
+    )
+
+    STATIC_URL = "{gcs_root}{prefix}/".format(
+        gcs_root=GCS_ROOT,
+        prefix=STATIC_PREFIX,
+    )
